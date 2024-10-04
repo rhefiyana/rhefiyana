@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--custom styles for templet-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <title>Galery</title>
+    <style>
+  body{
+      background-image: url(refiyana/11.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }  
+        }
+        .b-example-vr{
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+        .bi{
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+        .nav-scroller .nav{
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+        .bd-mode-toggle .{
+          z-index:1500;
+        }
+        
+        .bd-mode-toggle .dropdown-menu .active .bi {
+          display: block !important;
+        }
+      .overlay-dark::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 9, 9, 0.5);
+        z-index: 1;
+      }
+      
+  </style>
+    </head>
+      <body text="white">
+                    <!--navbar-->
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="#">PT.Garnier Plus</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                  
+                        <div class="collapse navbar-collapse" id="navbarsExample03">
+                          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="about.html">About</a>
+                            </li>
+                             <li class="nav-item">
+                              <a class="nav-link" href="galery2.html">Galery</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="login.html">Logout</a>
+                        </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                dropdown</a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                          </ul> 
+                        </div>
+                      </div>
+                    </nav>
+
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="overlay-dark">
+                            <img src="img2/10.jpeg" style="width: 100%; height: 100%;" alt="">
+                          </div>
+                          <div class="container">
+                            <div class="carousel-caption text-dark text-white">
+                              <h1>Pabrik Garnier dan Skincare-Skincare Terbaik</h1>
+                              <p>Tertarik dengan bisnis Garnier dan skincare?? Yuk, Konsultasi bersama PT.Kita BersamaIndonesia</p>
+                              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="overlay-dark">
+                            <img src="img2/5.jpeg" style="width: 100%; height: 100%">
+                          </div>
+                          <div class="container">
+                            <div class="carousel-caption text-dark text-white">
+                              <h1>Punya Masalah Kulit Kering atau Berjerawat?</h1>
+                              <p>Temukan solusinya dengan produk skincare kami yang telah terbukti ampuh.</p>
+                              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="overlay-dark">
+                          <img src="img2/6.jpeg" style="width: 100%;">
+                          </div>
+                          <div class="container">
+                            <div class="carousel-caption text-dark text-white">
+                              <h1>Bingung Dengan Produk Kami ?</h1>
+                               <p>Tersedia dalam berbagai varian untuk memenuhi kebutuhan kulit normal, 
+                                kering, berminyak dan sensitiv</p>
+                              <p><a class="btn btn-lg btn-primary" href="">Browse Galery</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    
+
+                    <div class="album py-5 bg-body-tertiary">
+                      <div class="container">
+                  
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                          <div class="col">
+                            <div class="card shadow-sm">
+                             <img src="refiyana/3.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Bisa dibilang ini  merupakan produk Garnier untuk memutihkan wajah berupa sabun muka Sakura White Foam.
+                                  Selain bisa mencerahkan warna kulit, sabun ini juga efektif untuk mengangkat bakteri dan memicu kulit kusam serta berjerawat.
+                                  </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/a314bfb1b8f2d14090c0ebd35f3fe68b.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Garnier Sakura White Booster Serum dengan kandungan hyaluron dan ekstrak sakura akan membuat wajah cerah dan glowing dalam waktu 7 hari. Tekstur kulitmu juga akan jadi lebih halus, sehingga terasa lebih sehat..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekaranng</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang </button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/db7bf1f7a745b5f05d8c754f7793dc3b.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Produk Garnier untuk memutihkan kulit selanjutnya adalah Sakura White Pinkish Radiance Whitening Cream. Dilengkapi juga dengan spf 30.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                      </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/MASK-GARN-007A-1.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-te xt">Gunakan Garnier Serum Mask Sakura White untuk perawatan wajah praktis dan terjangkau. Sheet mask ini dijual dengan harga mulai dari Rp20.900 per lembar.
+                                  .</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/ESSE-GARN-001B-1.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Garnier Sakura White Glow Water Essence akan membuat wajah lebih bersinar, cerah, lembap, dan kenyal. Dengan 1.000 kali kekuatan hidrasi dari hialuronat.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/ac15ed6a75b7d09462fd7d605165d665.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Garnier Complete Brightening Face Wash Scrub cocok untuk kamu yang punya kulit berminyak dan ingin mendapatkan wajah yang lebih cerah bebas kusam.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                  
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/e178844d54a939ae885aff014e863de9.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Booster serum Garnier Light Complete yang mengandung vitamin C akan mempercepat kulit mencapai rona yang lebih cerah. Terbuat dari vitamin C murni yang diekstrak dari Lemon Yuzu Jepang, serum ini aman untuk hampir semua jenis kulit.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Kerajang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="img2/6.jpeg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang </button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="img2/3.jpeg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="album py-5 bg-body-tertiary">
+                      <div class="container">
+                  
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                          <div class="col">
+                            <div class="card shadow-sm">
+                             <img src="refiyana/3.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Bisa dibilang ini  merupakan produk Garnier untuk memutihkan wajah berupa sabun muka Sakura White Foam.</p>
+                                  </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/a314bfb1b8f2d14090c0ebd35f3fe68b.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Garnier Sakura White Booster Serum dengan kandungan hyaluron dan ekstrak sakura akan membuat wajah cerah dan glowing dalam waktu 7 hari. Tekstur kulitmu juga akan jadi lebih halus, sehingga terasa lebih sehat..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekaranng</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang </button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/db7bf1f7a745b5f05d8c754f7793dc3b.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Produk Garnier untuk memutihkan kulit selanjutnya adalah Sakura White Pinkish Radiance Whitening Cream. Dilengkapi juga dengan SPF 30, krim ini bisa melindungi kulit dari kerusakan akibat sinar matahari berlebih.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                      </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/MASK-GARN-007A-1.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-te xt">Gunakan Garnier Serum Mask Sakura White untuk perawatan wajah praktis dan terjangkau. Sheet mask ini dijual dengan harga mulai dari Rp20.900 per lembar.
+                                  .</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/ESSE-GARN-001B-1.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Garnier Sakura White Glow Water Essence akan membuat wajah lebih bersinar, cerah, lembap, dan kenyal. Dengan 1.000 kali kekuatan hidrasi dari hialuronat.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/ac15ed6a75b7d09462fd7d605165d665.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Garnier Complete Brightening Face Wash Scrub cocok untuk kamu yang punya kulit berminyak dan ingin mendapatkan wajah yang lebih cerah bebas kusam.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                  
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="refiyana/e178844d54a939ae885aff014e863de9.jpg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">Booster serum Garnier Light Complete yang mengandung vitamin C akan mempercepat kulit mencapai rona yang lebih cerah. Terbuat dari vitamin C murni yang diekstrak dari Lemon Yuzu Jepang, serum ini aman untuk hampir semua jenis kulit.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Kerajang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="img2/6.jpeg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang </button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-sm">
+                              <img src="img2/3.jpeg" alt="" height="350px">
+                              <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Beli Sekarang</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Masukan Keranjang</button>
+                                  </div>
+                                  <small class="text-body-secondary">9 mins</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <footer>
+                      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                      </ul>
+                      <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+                    </footer>
+  <script src="js/bootstrap.js"></script>
+  <P class="text-center text-body-secondary">&copy; RhefiYanaRizal</P>
+</body>
+</html>
